@@ -17,7 +17,7 @@ function afficherPanier() {
 
         // Bouton supprimer
         const btn = document.createElement("button");
-        btn.textContent = "❌";
+        btn.textContent = "Retirer";
         btn.onclick = () => supprimerDuPanier(index);
         li.appendChild(btn);
 
@@ -91,4 +91,5 @@ function validerCommande() {
 }
 
 // Charger le panier automatiquement à l'ouverture
+
 window.onload = chargerPanier;
