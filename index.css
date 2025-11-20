@@ -1,0 +1,106 @@
+/* --- Style général du site --- */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    background-image: url("file_00000000793861f5b49ef65cd51c0799.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+    margin: 10px;
+    padding: 5px;
+}
+
+
+/* --- Barre de navigation --- */
+
+nav {
+    background-color: hsla(0, 100%, 25%, 0.692);
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --- Liens de navigation --- */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+
+/* --- Effet au survol --- */
+
+nav a:hover {
+    background-color: brown;
+}
+
+
+/* --- Contenu principal --- */
+
+.content {
+    padding: 40px;
+    text-align: center;
+}
+
+
+/* --- Section Nos Services --- */
+
+#services {
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+#services h2 {
+    color: maroon;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+
+/* Conteneur des cartes de services */
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* Carte individuelle de service */
+
+.service {
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+/* Effet au survol */
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service h3 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.service p {
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+}

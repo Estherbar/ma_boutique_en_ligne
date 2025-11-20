@@ -1,0 +1,154 @@
+body {
+    background-color: wheat;
+    color: black;
+    text-align: center;
+}
+
+#catalogue {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#catalogue h2 {
+    color: black;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+
+/* Effet de défilement fluide */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /*background-color: #f8f8f8;*/
+}
+
+
+/* Barre de navigation */
+
+nav {
+    background-color: hsla(0, 100%, 25%, 0.692);
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --- Liens de navigation --- */
+
+nav {
+    background-color: hsla(0, 100%, 25%, 0.692);
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --- Effet au survol --- */
+
+nav a:hover {
+    background-color: brown;
+}
+
+
+/* --- Liens de navigation --- */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+
+/* Catalogue */
+
+#catalogue {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.catalogue-container {
+    display: flex;
+    flex-direction: column;
+    /*grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));*/
+    gap: 30px;
+    margin-top: 40px;
+    justify-items: center;
+}
+
+.articles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.article {
+    background-color: rgb(195, 127, 76);
+    ;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 220px;
+    transition: transform 0.3s;
+    flex-wrap: nowrap;
+    text-align: center;
+    transition: transform 0, 3s ease;
+}
+
+.article:hover {
+    transform: translate(-6px);
+    transition: transform 0, 18s ease;
+}
+
+.article img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    display: block;
+}
+
+.article h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.price {
+    color: white;
+    font-weight: bold;
+}
+
+.bouton-panier {
+    background-color: #f7d37a;
+    color: #333;
+    font-size: 18px;
+    /* Texte plus grand */
+    padding: 12px 24px;
+    /* Plus de marge interne */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    width: 100%;
+    /* Optionnel : bouton pleine largeur */
+    max-width: 300px;
+    /* Limite la largeur si nécessaire */
+}
+
+.bouton-panier:hover {
+    background-color: #e0b859;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="panier.js" defer></script>
+    <link rel="stylesheet" href="commande.css">
+</head>
+<script>
+    function envoyerWhatsApp() {
+        let nom = document.getElementById('nom-client').value;
+        let adresse = document.getElementById('adresse-client').value;
+        let numero = document.getElementById('numero-client').value;
+
+        let message = `Nouvelle commande :
+Nom : ${nom}
+Adresse : ${adresse}
+Numéro : ${numero}`;
+
+        // Remplace par ton propre numéro WhatsApp (format international)
+        let url = "https://wa.me/qr/INBHQ7V6NHKOL1" + encodeURIComponent(message);
+
+        window.open(url, "_blank");
+    }
+
+    function envoyerEmail() {
+        let nom = document.getElementById('nom-client').value;
+        let adresse = document.getElementById('adresse-client').value;
+        let numero = document.getElementById('numero-client').value;
+
+        let subject = "Nouvelle commande";
+        let body = 'Nom: $ { nom}\nAdresse: $ {adresse}\nNuméro: $ {numero}';
+
+        // Remplace par ton adresse mail
+        window.location.href = 'mailto: barroesther2020@gmail.com ? subject = $ {encodeURIComponent(subject)} & body = $ {encodeURIComponent(body)}';
+    }
+</script>
+
+<body>
+    <div class="body">
+        <!-- FORMULAIRE CLIENT -->
+        <div id="formulaire-commande">
+            <h3>Informations client</h3>
+            <input type="text" id="nom-client" placeholder="Votre nom">
+            <input type="text" id="adresse-client" placeholder="Adresse de livraison">
+            <input type="text" id="numero-client" placeholder="Votre numeros">
+            <button>Valider</button>
+            <!-- Boutons d’envoi -->
+            <button onclick="envoyerWhatsApp()">Envoyer via WhatsApp</button>
+            <button onclick="envoyerEmail()" style="background:#444; margin-top:10px;">Envoyer par Email</button>
+        </div>
+    </div>
+</body>
+
+</html>

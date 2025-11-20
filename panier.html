@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Panier</title>
+    <link rel="stylesheet" href="panier.css">
+    <script src="panier.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="panier.html">Panier</a>
+            <a href="commande.html">Commande</a>
+        </nav>
+    </header>
+
+    <!-- 🛍 PANIER -->
+    <div id="panier">
+        <h2>Mon Panier</h2>
+        <ul id="liste-panier"></ul>
+        <p id="total">Total : 0 CFA</p>
+        <a href="commande.html">
+            <button id="commander" onclick="passerCommande()">Passer la commande</button>
+        </a>
+
+
+    </div>
+
+
+
+    <script>
+        // Récupérer le panier depuis localStorage
+        /*let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let list = document.getElementById("liste-panier");
+        let total = 0;
+
+        // Afficher les articles
+        cart.forEach(item => {
+            let li = document.createElement("li");
+            li.textContent = item.name + " - " + item.price + " CFA";
+            list.appendChild(li);
+
+            // Calculer le total
+            total += item.price;
+        });
+
+        // Mettre à jour le total
+        document.getElementById("total").textContent = "Total : " + total + " CFA";
+
+        // Exemple de fonction commande
+        function passerCommande() {
+            alert("Commande passée avec succès !");
+        }*/
+    </script>
+
+</body>
+
+</html>

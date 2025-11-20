@@ -1,0 +1,113 @@
+body {
+    background-image: url("997375d6ac84565a9b189218e6ae101e.jpg");
+    background-size: cover;
+    /* pour que l’image occupe tout l’écran */
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    width: 90%;
+    margin: 0 auto 60px auto;
+}
+
+nav {
+    background-color: hsla(0, 100%, 25%, 0.692);
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* --- Liens de navigation --- */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #b97c79;
+    /* cohérent avec la couleur du panier */
+}
+
+
+/* --- Boutons génériques --- */
+
+.btn {
+    background-color: #f7d37a;
+    color: #333;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e0b859;
+}
+
+
+/* --- Panier --- */
+
+#panier {
+    background-color: #fff;
+    color: #333;
+    border-radius: 15px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#panier h2 {
+    color: #b97c79;
+}
+
+#liste-panier {
+    list-style: none;
+    padding: 0;
+}
+
+#liste-panier li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#total {
+    font-weight: bold;
+    color: #d60000;
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+/* --- Bouton commander --- */
+
+#commander {
+    display: block;
+    margin: 20px auto 0;
+    background-color: #b97c79;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#commander:hover {
+    background-color: #944c4b;
+}
