@@ -93,3 +93,4 @@ function validerCommande() {
 // Charger le panier automatiquement à l'ouverture
 
 window.onload = chargerPanier;
+
