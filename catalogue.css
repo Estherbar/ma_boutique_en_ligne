@@ -151,4 +151,11 @@ nav a {
 
 .bouton-panier:hover {
     background-color: #e0b859;
+
+}
+h2 {
+    background-color: #e0b859;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
