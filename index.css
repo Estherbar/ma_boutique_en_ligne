@@ -39,7 +39,7 @@ nav a {
 /* --- Effet au survol --- */
 
 nav a:hover {
-    background-color: brown;
+    background-color: black;
 }
 
 
@@ -103,4 +103,5 @@ nav a:hover {
     color: black;
     font-size: 15px;
     line-height: 1.5;
+
 }
