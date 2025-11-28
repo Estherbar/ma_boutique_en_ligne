@@ -150,7 +150,8 @@ nav a {
 }
 
 .bouton-panier:hover {
-    background-color: #e0b859;
+    background-color:white;
+};
 
 }
 h2 {
@@ -162,5 +163,6 @@ h2 {
 nav a:hover {
     background-color: black;
 }
+
 
 
