@@ -110,4 +110,9 @@ nav a:hover {
 
 #commander:hover {
     background-color: #944c4b;
+
+}
+
+nav a:hover {
+    background-color: black;
 }
